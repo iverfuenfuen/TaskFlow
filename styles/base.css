@@ -1,0 +1,96 @@
+/*--Reset globla -- */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* -- Cuerpo --*/
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    min-height: 100vh;
+    padding: 20px 16px;
+}
+
+.app {
+    max-width: 1200px;
+    margin: 0 auto; /* Centra con margin automaticamente */
+}
+
+/* -- Heder -- */
+.panel-hearder {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    padding: 20px 24px;  /* Rellana el interior */
+    background: white;
+    border-radius: 12px;
+    border-left: 5px solid #0f172a; /* borde solo izquierdo */
+    margin-bottom: 24px; /* Mergen exterior inferior */
+}
+.panel-titulo { font-size: 1.5rem; font-weight: 800; color:#0f172a ;}
+.panel-subtitulo {font-size: 0.875rem; color: #64748b;}
+
+/*Tablero en columna en movil */
+
+.panel-tablero {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px
+}
+
+/*Tabla de kanban */
+.columna-kenban {
+    background: white;
+    border-radius: 12px;
+    padding: 16px;
+    border: 1px solid #e2e8f0;
+}
+
+.columna-cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #f1f5f9;
+    margin-bottom: 12px;
+}
+
+.columna-titulo {font-size:0.83rem; font-weight: 700; text-transform: uppercase; color: #475569;}
+.columna-contador { font-size: 0.8rem; font-weight: 700; background: #f1f5f9; color: #64748b; padding: 2px 8px; border-radius: 20px; }
+.columna-lista   { display: flex; flex-direction: column; gap: 10px; }
+
+/*Tarjeta de tarea */
+.tarjeta-tarea {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 12px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px
+}
+
+.tarea-etiqueta{
+    display: inline block;
+    font-size: o.7rem; font-weight: 700; color: #64748b;
+    background: #e2e8f0;
+    padding: 2px 8px;
+    border-radius: 20px;
+}
+
+.tarea-titulo {font-size: 0.9rem; font-weight: 600; color:#1e293b;}
+.tarea-desc {font-size: 0.8rem; color: #64748b; line-height: 1.5;}
+.tarea-meta {display: flex; justify-content: space-between; align-items: center; margin-top: 4px ;}
+.tarea-propiedad {
+    display: inline-block;
+    font-size: 0.7rem; font-weight: 700;
+    padding: 2px 8px; border-radius: 20px; color: white;
+}
+.tarea-propiedad--alta  {background: #dc2626;}
+.tarea-prioridad--media { background: #ea580c; }
+.tarea-prioridad--baja  { background: #16a34a; }
+.tarea-fecha { font-size: 0.75rem; color: #94a3b8; }

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow</title>
+    <link rel="stylesheet" href="styles/base.css">
+
+</head>
+<body>
+    <div class="app">
+        <!--Header del panel-->
+        <header class="panel-header">
+            <h1 class="panel-titulo">TaskFlow</h1>
+            <span class="panel-subtitulo">Gestion de tareas</span>
+        </header>
+
+        <!--Columnas de Kanban-->
+        <main class="panel-tablero"> 
+
+            <section  class="columna-kenban">
+                <div class="columna-cabecera">
+                    <h2 class="columna-titulo">Por hacer</h2>
+                    <span class="columna-contador">3</span>
+                </div>
+                <div class="columna-lista">
+                    <article class="tarjeta-tarea">
+                        <span class="tarea-etiqueta">Diseño</span>
+                        <h3 class="tarea-titulo">Crear paleta de colores</h3>
+                        <p class="tarea-desc">
+                            Definir los colores principlaes del sistema de diseño
+                        </p>
+                        <div class="tarea-meta">
+                            <span class="tarea-propiedad tarea-propiedad--alta">
+                                Alta
+                            </span>
+                            <span class="tarea-fecha">15 ene 2025</span>
+                        </div>
+                    </article>
+
+                    <article class = "tarjeta-tarea">
+                        <spa class="tarea-etiqueta">Diseño</spa>
+                        <h3 class="tarea-titulo">Implementar los colores al codigo</h3>
+                        <p class="tarea-desc">
+                            Actualizar el codigo, con los nuevos colores definidos
+                        </p>
+                        <div class="tarea-meta">
+                        <span class="tarea-propiedad tarea-prioridad--media">
+                            Media
+                        </span>
+                        <span class="tarea-fecha">17 ene 2025</span>
+                        </div>
+                        
+                    </article>
+
+                    <article class = "tarjeta-tarea">
+                        <spa class="tarea-etiqueta">Diseño</spa>
+                        <h3 class="tarea-titulo">Subir el codigo a un repositorio</h3>
+                        <p class="tarea-desc">
+                            Subir el codigo a GigHub en un repositorio
+                        </p>
+                        <div class="tarea-meta">
+                        <span class="tarea-propiedad tarea-prioridad--baja">
+                            Baja
+                        </span>
+                        <span class="tarea-fecha">19 ene 2025</span>
+                        </div>
+                        
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
