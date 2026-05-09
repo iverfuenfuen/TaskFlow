@@ -1,3 +1,5 @@
+@import 'tokens.css';
+
 /*--Reset globla -- */
 *, *::before, *::after {
     box-sizing: border-box;
@@ -5,12 +7,13 @@
     padding: 0;
 }
 
+
 /* -- Cuerpo --*/
 
 body {
-    font-family: 'Segoe UI', system-ui, sans-serif;
-    background-color: #f1f5f9;
-    color: #1e293b;
+    font-family: var(--fuente-base);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
     min-height: 100vh;
     padding: 20px 16px;
 }
@@ -71,7 +74,15 @@ body {
     padding: 12px 14px;
     display: flex;
     flex-direction: column;
-    gap: 6px
+    gap: 6px;
+    box-shadow: var(--sombra-sm);
+    transform: translateY(0);
+    transition: box-shadow var(--trans-base), transform var(--trans-base);
+    cursor: pointer;
+}
+.tarjeta-tarea:hover {
+    box-shadow: var(--sombra-md);
+    transform: translateY(-2px);
 }
 
 .tarea-etiqueta{
@@ -90,7 +101,7 @@ body {
     font-size: 0.7rem; font-weight: 700;
     padding: 2px 8px; border-radius: 20px; color: white;
 }
-.tarea-propiedad--alta  {background: #dc2626;}
-.tarea-prioridad--media { background: #ea580c; }
-.tarea-prioridad--baja  { background: #16a34a; }
+.tarea-propiedad--alta  {background: var(--prioridad-alta);}
+.tarea-prioridad--media { background: var(--prioridad-media); }
+.tarea-prioridad--baja  { background: var(--prioridad-baja); }
 .tarea-fecha { font-size: 0.75rem; color: #94a3b8; }

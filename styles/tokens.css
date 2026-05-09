@@ -1,0 +1,41 @@
+/* Taskflow - Desing tokne
+Aqui estaran todas la variables del proyecto*/
+
+:root {
+
+/* --Tipografica -- */
+    --fuente-base: 'Inter', 'Segoe UI', system-ui, sans-serif; 
+    --text-xs: 0.72rem;
+    --text-sm: 0.83rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.5rem;
+    --text-2x1: 2rem;
+
+/* Color de Interfas */
+
+    --color-fondo:      #f1f5f9;
+    --color-superficie: #ffffff;
+    --color-border:     #e2e8f0;
+    --color-texto:      #1e293b;
+    --color-texto-sec:  #64748b;
+    --color-marca:      #0f172a;
+
+/* Prioridad de tareas */
+    --prioridad-alta:  #dc2626;
+    --prioridad-media: #ea580c;
+    --prioridad-baja:  #16a34a;
+
+/* Radios y sombras */
+    --radio-sm: 6px;
+    --radio-md: 10px;
+    --radio-lg: 14px;
+    --sombra-sm: 0 1px 4px  rgba(0,0,0,0.07);
+    --sombra-md: 0 4px 16px rgba(0,0,0,0.10);
+    --sombra-lg: 0 8px 32px rgba(0,0,0,0.14);
+
+/* Trasiciones */
+    --trans-rapidas: 150ms ease;
+    --trans-base: 200ms ease;
+    --trans-lenta: 300ms ease;
+}
