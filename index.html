@@ -10,10 +10,10 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
     rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
-
 </head>
 <body>
     <div class="app">
+
         <!--Header del panel-->
         <header class="panel-header">
             <h1 class="panel-titulo">TaskFlow</h1>
@@ -21,9 +21,10 @@
         </header>
 
         <!--Columnas de Kanban-->
-        <main class="panel-tablero"> 
+        <main class="panel-tablero">
 
-            <section  class="columna-kenban">
+            <!-- Columna: Por hacer -->
+            <section class="columna-kenban">
                 <div class="columna-cabecera">
                     <h2 class="columna-titulo">Por hacer</h2>
                     <span class="columna-contador">3</span>
@@ -33,47 +34,94 @@
                         <span class="tarea-etiqueta">Diseño</span>
                         <h3 class="tarea-titulo">Crear paleta de colores</h3>
                         <p class="tarea-desc">
-                            Definir los colores principlaes del sistema de diseño
+                            Definir los colores principales del sistema de diseño
                         </p>
                         <div class="tarea-meta">
-                            <span class="tarea-propiedad tarea-propiedad--alta">
-                                Alta
-                            </span>
+                            <span class="tarea-prioridad tarea-prioridad--alta">Alta</span>
                             <span class="tarea-fecha">15 ene 2025</span>
                         </div>
                     </article>
 
-                    <article class = "tarjeta-tarea">
-                        <spa class="tarea-etiqueta">Diseño</spa>
+                    <article class="tarjeta-tarea">
+                        <span class="tarea-etiqueta">Diseño</span>
                         <h3 class="tarea-titulo">Implementar los colores al codigo</h3>
                         <p class="tarea-desc">
                             Actualizar el codigo, con los nuevos colores definidos
                         </p>
                         <div class="tarea-meta">
-                        <span class="tarea-propiedad tarea-prioridad--media">
-                            Media
-                        </span>
-                        <span class="tarea-fecha">17 ene 2025</span>
+                            <span class="tarea-prioridad tarea-prioridad--media">Media</span>
+                            <span class="tarea-fecha">17 ene 2025</span>
                         </div>
-                        
                     </article>
 
-                    <article class = "tarjeta-tarea">
-                        <spa class="tarea-etiqueta">Diseño</spa>
+                    <article class="tarjeta-tarea">
+                        <span class="tarea-etiqueta">Diseño</span>
                         <h3 class="tarea-titulo">Subir el codigo a un repositorio</h3>
                         <p class="tarea-desc">
-                            Subir el codigo a GigHub en un repositorio
+                            Subir el codigo a GitHub en un repositorio
                         </p>
                         <div class="tarea-meta">
-                        <span class="tarea-propiedad tarea-prioridad--baja">
-                            Baja
-                        </span>
-                        <span class="tarea-fecha">19 ene 2025</span>
+                            <span class="tarea-prioridad tarea-prioridad--baja">Baja</span>
+                            <span class="tarea-fecha">19 ene 2025</span>
                         </div>
-                        
                     </article>
                 </div>
             </section>
+
+            <!-- Columna: En proceso -->
+            <section class="columna-kenban">
+                <div class="columna-cabecera">
+                    <h2 class="columna-titulo">En proceso</h2>
+                    <span class="columna-contador">2</span>
+                </div>
+                <div class="columna-lista">
+                    <article class="tarjeta-tarea">
+                        <span class="tarea-etiqueta">Diseño</span>
+                        <h3 class="tarea-titulo">Optimizacion de css</h3>
+                        <p class="tarea-desc">
+                            Optimizar las variables del css en tokens.css
+                        </p>
+                        <div class="tarea-meta">
+                            <span class="tarea-prioridad tarea-prioridad--media">Media</span>
+                            <span class="tarea-fecha">15 ene 2025</span>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-tarea">
+                        <span class="tarea-etiqueta">Diseño</span>
+                        <h3 class="tarea-titulo">Aplicacion de Flexbox</h3>
+                        <p class="tarea-desc">
+                            Utilizar elementos de Flexbox, para crear componentes
+                        </p>
+                        <div class="tarea-meta">
+                            <span class="tarea-prioridad tarea-prioridad--baja">Baja</span>
+                            <span class="tarea-fecha">15 ene 2025</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Columna: Terminadas -->
+            <section class="columna-kenban">
+                <div class="columna-cabecera">
+                    <h2 class="columna-titulo">Terminadas</h2>
+                    <span class="columna-contador">1</span>
+                </div>
+                <div class="columna-lista">
+                    <article class="tarjeta-tarea">
+                        <span class="tarea-etiqueta">Diseño</span>
+                        <h3 class="tarea-titulo">Creacion de estructura</h3>
+                        <p class="tarea-desc">
+                            Crear las carpetas estructuradas del proyecto.
+                        </p>
+                        <div class="tarea-meta">
+                            <span class="tarea-prioridad tarea-prioridad--baja">Baja</span>
+                            <span class="tarea-fecha">12 ene 2025</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
         </main>
     </div>
 </body>
